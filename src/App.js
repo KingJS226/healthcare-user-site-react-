@@ -15,5 +15,4 @@ const App = () => {
             </Switch>
     );
 }
-
 export default withTranslation('common')(App);
