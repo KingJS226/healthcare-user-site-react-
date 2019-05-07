@@ -1,0 +1,42 @@
+{
+  "name": "your-app",
+  "version": "0.1.0",
+  "private": true,
+  "// If You want to install mdbreact from our GitLab repository, please replace '4.11.1' with gitURL provided here ->": "git+https://oauth2:<YOUR-TOKEN-GOES-HERE>@git.mdbootstrap.com/mdb/react/re-pro.git",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "emotion": "^10.0.9",
+    "i18next": "^15.0.9",
+    "i18next-browser-languagedetector": "^3.0.1",
+    "i18next-xhr-backend": "^2.0.1",
+    "mdbreact": "^4.11.1",
+    "outy": "^0.1.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.7.0",
+    "react-autosuggest": "^9.4.3",
+    "react-dom": "^16.7.0",
+    "react-emotion": "^10.0.0",
+    "react-i18next": "^10.6.2",
+    "react-multi-bar-slider": "^1.2.1",
+    "react-router": "^4.3.1",
+    "react-scripts": "2.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "rename": "renamer --find App-clear.js --replace App.js ./src/App-clear.js && renamer --find style.css --replace index.css ./src/style.css ",
+    "remove-demo": "rimraf ./src/assets ./src/components ./src/pages ./src/Routes.js ./src/App.js ./src/index.css && npm run rename"
+  },
+  "devDependencies": {
+    "renamer": "^1.0.0",
+    "rimraf": "^2.6.2"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
